@@ -1,5 +1,7 @@
 These CSS are designed to work together to create a user interfaces in HTML. This is a very early pass at this work. As you study it, don't focus much on the cosmetics, rather focus on element positioning. As these patterns are refined, the cosmetics can be tweaked. 
 
+> If you download this project, the `index.html` provides a little "menu" to see each pattern. 
+
 This pattern library will grow. It currently doesn't include important patterns such as button or page header patterns. 
 
 Each pattern is currently a separate CSS file--and for initially prototyping working you'll need to include these CSS files. Later, though, these CSS files will be merged into one file. 
