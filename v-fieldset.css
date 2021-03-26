@@ -1,0 +1,42 @@
+:root {
+    --space-between-v-fieldset: 2em;
+    --button-inline-as-link-color: #566573;
+}
+
+div.v-fieldset:not(:first-child) {
+    margin-top: var(--space-between-v-fieldset);
+}
+
+div.h-fieldset span {
+    justify-self: end;
+    margin-right: 1em;
+}
+
+div.fields {
+    display: grid;
+    row-gap: .5em;
+    grid-auto-flow: row;
+}
+
+span.validator {
+    color: red;
+}
+
+.horizontal-field-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.button-inline-as-link {
+    background: none;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    margin-bottom: .5em;
+    cursor: pointer;
+    color: var(--button-iline-as-link-color);
+}

@@ -1,0 +1,26 @@
+div.columns-container {
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-gap: 1em; */
+    /* justify-items: stretch; */
+    grid-template-columns: 1fr 1fr;
+}
+
+div.columns-one {
+    grid-template-columns: 1fr;
+    max-width: calc(var(--max-page-width)/2);
+    /*
+    By default a single column is --max-page-width. 
+    Or,set it to something manually as below.
+    */
+    max-width: 70%;
+}
+
+div.two-column-left,
+div.two-column-right {
+    border: 1px solid blue;
+    background-color: whitesmoke;
+    padding: 1em;
+    min-width: calc(var(--max-page-width)/2);
+}

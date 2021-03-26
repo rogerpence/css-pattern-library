@@ -1,0 +1,141 @@
+﻿/*
+	This is very important because it sets all labels and fields
+	to flow in a vertical list. 
+*/
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.label-field-horizontal {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 15em auto;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#Image1 {
+    width: 88px;
+}
+
+#btn_cusmas {
+    width: 2em;
+    height: 2em;
+}
+
+div.page-container {
+    display: grid;
+    justify-content: center;
+    flex-direction: row;
+    grid-template-columns: minmax(0, 1fr) 1fr minmax(0, 1fr);
+}
+
+div.top-section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+ffdiv#table-0,
+dddiv#table-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    /*border: 4px solid blue;*/
+    min-width: 1280px;
+}
+
+div.buttons-container-horizontal {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+div.buttons-container-horizontal>input[type="button"] {
+    width: auto;
+    padding: .1em .3em .1em 1em;
+    background-color: lightgray;
+    border-radius: 1px;
+    margin-left: 1em;
+    box-shadow: none;
+    border: 0;
+}
+
+div.tab-buttons-container {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+    margin-top: 2em;
+    margin-left: .2em;
+}
+
+div.tab-buttons-container>input[type="button"] {
+    width: auto;
+    padding: .5em;
+    border-radius: 0;
+    background-color: darkgray;
+    box-shadow: none;
+    border: 0;
+    margin-left: .1em;
+}
+
+div.tab-contents-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    /*border: 4px solid blue;*/
+    min-width: 1280px;
+}
+
+div.tabbed-section-container {
+    padding-top: 2em;
+    background-color: whitesmoke;
+    padding-left: 2em;
+    padding-right: 2em;
+    border: 1px solid gray;
+}
+
+div#table-0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+div#table-3 {
+    display: grid;
+    /*justify-content: center;*/
+    grid-auto-flow: column;
+    column-gap: 2em;
+    grid-template-columns: 1fr 1fr;
+}
+
+.field-label-inline {
+    display: block;
+    margin-bottom: .2em;
+}
+
+.button-inline-as-link {
+    background: none;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    margin-bottom: .5em;
+    cursor: pointer;
+}
+
+.field-label {
+    display: block;
+    margin-bottom: .2em;
+}
+
+.field-input,
+.field-dropdown {
+    display: block;
+    margin-bottom: .5em;
+}

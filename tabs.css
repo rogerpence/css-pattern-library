@@ -1,0 +1,49 @@
+div.tab-contents-container {
+    --inactive-tab-color: darkgray;
+    --disabled-tab-color: gainsboro;
+    --tab-section-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    min-width: 1280px;
+}
+
+div.tabbed-section-container {
+    padding: 2em;
+    background-color: var(--tab-section-color);
+}
+
+div.tab-buttons-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+}
+
+div.tab-buttons-container>input[type="button"] {
+    width: auto;
+    padding: .5em;
+    border-radius: 0;
+    background-color: var(--inactive-tab-color);
+    box-shadow: none;
+    border: 0;
+}
+
+div.tab-buttons-container>input[type="button"].tab-button {
+    height: 3em;
+    cursor: pointer;
+}
+
+div.tab-buttons-container>input[type="button"].tab-button.active-tab {
+    background-color: var(--tab-section-color);
+}
+
+div.tab-buttons-container>input[type="button"].tab-button.disabled-tab {
+    background-color: var(--disabled-tab-color);
+    color: gray;
+    cursor: default;
+}
+
+.tab-button+.tab-button {
+    margin-left: .08em;
+}
