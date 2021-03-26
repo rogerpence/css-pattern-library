@@ -26,7 +26,9 @@ CSS custom properties (like all CSS properties) can also have CSS's `calc` funct
 
 The `page-container` pattern provides a fixed-width content panel with left and right margins. This pattern would probably be used only once per page.
 
-###![](https://asna.com/filebin/marketing/IRlKZRtvtv.png)
+![](https://asna.com/filebin/marketing/IRlKZRtvtv.png)
+
+`page-container` applies to the `<body> ` tag and needs no explicit markup. 
 
 ---
 
